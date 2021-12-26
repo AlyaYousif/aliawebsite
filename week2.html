@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Alya Alali website</title>
+
+   <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <link rel="stylesheet" href="css/maicons.css">
+
+  <link rel="stylesheet" href="vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="vendor/fancybox/css/jquery.fancybox.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+ <!-- .top-bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Alya<span class="text-primary">Alali</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="dropdown">
+            <a  href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="ion-ios-arrow-down"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="week1.html">Week 1</a></li>
+                <li><a href="week2.html">Week 2</a></li>
+                </ul>
+            
+          </ul>
+        </div>
+      </div> <!-- .container -->
+    </nav> <!-- .navbar -->
+
+    <div class="page-banner bg-img bg-img-parallax overlay-dark" style="background-image: url(../assets/img/electronic-printed-circuit-boards.jpg);">
+      <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-lg-8">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+              </ol>
+            </nav>
+            <h1 class="fg-white text-center">Assignments</h1>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-banner -->
+  </header>
+
+  <main>
+    <div class="page-section">
+      <div class="container">
+       
+            <h1 class="title-section"> <span class="fg-primary">Week 2</span> </h1>
+            <h2 class="title-section"> Documentation in Github</h2>    
+            <p>This week, we learnt how to use the <a href="https://github.com">Github</a> website to document our files. Github will be used to document and keep our files in various versions. To control the version of files, we will apply some commands in the terminal.Here are some basic commands: </p>
+            <p> - ls is used to display all the files and folders.<br>
+                 - cd is used to go to other directories.<br>
+                     - cd- go to previous directory. <br>
+                     - cd~ got home directory <br>
+                     - cd ../ go one level up <br>
+                     - mkdir use to create new folder</p>
+          
+          <h3 class="title-section">Configuring Git </h3>
+          <p>Before configuring Git, We created a repository on our profile which contains all files and history of them. Here are the steps of creating a repository:-<br>
+          1-Click on the "+" icon of Github and choose new repository <pre></pre>
+              <img src="img/new.png" width="700" height="300" class="center"> <pre></pre>
+          2-Fill the name of repository ,description  and add readme file then click on create repository button.<pre></pre>
+             <img src="img/repository.png" width="700" height="300" class="center"> 
+              
+              <pre></pre>
+          
+        
+        <p> After that, we created a folder using commands to save all documents through the diploma.An image that show all commands used to create folder is shown below.First, we use ls command to list all files and directories.I decided to create a folder in the desktop, cd commaned is used to get to Desktop directory. mkdir commaned is then used to create a folder named  myfabacademy on the Desktop.Inside this folder ,a new folder is created .finlly,cd is used to move to aliawebsite directory in order to start configuring. </p>
+              <img src="img/commands.png" width="900" height="150" class="center">     <pre> </pre>
+        <p>for configuring Git, you need to know the name of your account and email you register in Github.The two images below shows two commands needed to configure the Git in your laptop:</p>
+           <h5 class="title-section"> <span class="fg-primary">Configuring Git username</span> </h5> 
+           <img src="img/config%20name.png" width="700" height="100" class="center">
+           <pre></pre>
+           <h5 class="title-section"> <span class="fg-primary">Configuring Git email</span> </h5>
+           <img src="img/configemail.png" width="700" height="100" class="center">
+           <pre> </pre>
+          <h3 class="title-section">Generating ssh key </h3>
+          <p> The ssh key is generate it so every time we connect to Github no username and password is asked. To generate ssh, we open the terminal and write the below command :</p>
+          <img src="img/ssh.png" width="700" height="100" class="center">
+          <pre></pre>
+          <p>After writing the command, a hidden file with the key is created inside the folder.To connect the ssh to Github I followed this steps:<br> </p>
+          <pre></pre>
+            <p>
+                1-Open TextEdit and go to the folder you saved the ssh file.<br></p>
+                <pre></pre> 
+               <img src="img/textedit.png" width="500" height="200" class="center">
+                 <pre></pre> 
+          <p> 2- Press cmd + shift + "." to show the ssh hidden file.<br> </p>
+          <pre></pre> 
+                <img src="img/hidden.png" width="500" height="200" class="center">
+                 <pre></pre> 
+          <p>  3-open id_rsa.pub file and copy all the text. <br></p>
+                <pre></pre>
+                 <img src="img/key.png" width="500" height="200" class="center">
+                 <pre></pre>
+          <p> 4-Go to Github->setting->SSH and GPG keys->New key <br></p>
+                 <pre></pre>
+          <p> 5-Paste the text and click on Add key <br></p>
+          <pre></pre>
+              <img src="img/skey.png" width="500" height="200" class="center">
+             <pre></pre>
+          <h3 class="title-section">Cloning Github Project </h3>
+          <p>The project is cloned to Github so that we can easily push our file to the repository. To do so I followed these steps:<br></p>
+          
+          <p> 1-Go to my repository -> Code -> ssh and copy the text.<br></p>
+            <pre></pre>
+             <img src="img/clone.png" width="500" height="200" class="center">
+            <pre></pre>
+          <p> 2-open terminal and go to the folder that we will save our project.<br></p>
+          <pre></pre>
+          <p>3-Use git clone commnad and paste the ssh clone.</p>
+          <img src="img/clonecommand.png" width="700" height="100" class="center">
+          <pre></pre>
+          <h3 class="title-section">Pushing in Github </h3>
+          <p> Pushing in Github means to upload the project files in the Github repository.To do so we learned some basics command:- <br>
+          
+              - git status : used to know the status of the working directory<br>
+              - git add . : to add all files , to add specific file write the name of  the file.<br>
+              - git commit -m " ": to commit on the changes happens on the files
+          </p>
+              <h3 class="title-section">Hosting sites in Github </h3>
+          <p> here are the steps of publising a website in Github:</p>
+                 
+              <p> 1-Copy the website file in to the folder we saved our project</p>
+                
+          <p> 2-Open terminal and go to the folder you save your project </p>
+                   
+          <p> 3- Add all files using "git add." command</p>
+                     <pre ></pre>
+                 <img src="assets/img/gitadd.png" width="800" height="50" class="center">
+                       <pre > </pre>
+          <p> 4-commit a changes using "git commit -m" command, message is added to distinguish between the files.</p>
+                       <pre ></pre>
+                 <img src="assets/img/commit.png" width="800" height="100" class="center">
+                       <pre > </pre>
+          <p>5-push the files to Github using "git push" command.</p>
+                   <pre></pre>
+                <img src="assets/img/push.png" width="800" height="100" class="center">
+                   <pre></pre>
+          <p>Here you can see that all files are uploaded in the repository</p>
+            
+                <img src="assets/img/res.png" width="700" height="200" class="center">
+                   <pre></pre>
+          <p>6- Go to repository settings -> page section. </p>
+          <p>7- Change None to main and click on save.</p>
+                <img src="assets/img/main.png" width="700" height="200" class="center">
+                   <pre></pre>
+          <p>8-After clicking on save a link will appear, This is the website link. </p>
+          
+        </div>
+             
+             
+            </div>
+          
+    </main>
+<script src="js/jquery-3.5.1.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script src="vendor/wow/wow.min.js"></script>
+
+<script src="vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+
+<script src="js/google-maps.js"></script>
+
+<script src="js/theme.js"></script>
+    </body>
+</html>
