@@ -1629,7 +1629,7 @@ a.fg-light:hover, a.fg-light:focus {
 
 @media (min-width: 768px) {
   .page-banner.home-banner {
-    height: 540px;
+    height:500px;
     max-height: unset;
   }
 }
@@ -2445,4 +2445,25 @@ dropdown-menu {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+.centr{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
