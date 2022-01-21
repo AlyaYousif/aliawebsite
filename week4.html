@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Alya Alali website</title>
+
+     <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <link rel="stylesheet" href="css/maicons.css">
+
+  <link rel="stylesheet" href="vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="vendor/fancybox/css/jquery.fancybox.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+ <!-- .top-bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Alya<span class="text-primary">Alali</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+              <li class="nav-item active">
+           
+              <a href="portfolio.html" class="nav-link">Assignments</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div> <!-- .container -->
+    </nav> <!-- .navbar -->
+
+    <div class="page-banner bg-img bg-img-parallax overlay-dark" style="background-image: url(assets/img/electronic-printed-circuit-boards.jpg);">
+      <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-lg-8">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+              </ol>
+            </nav>
+            <h1 class="fg-white text-center">Assignments</h1>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-banner -->
+  </header>
+
+  <main>
+    <div class="page-section">
+      <div class="container">
+          <center>
+          <h1 class="title-section"> <span class="fg-primary">Electronics Production
+         </span></h1>
+          </center>
+             <pre> </pre>
+          
+               
+          <p>We learnt the stages of electronic manufacture this week by creating a PCB <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html" > FabTinyISP </a>. This PCB will serve as a programming board, allowing additional PCBs to be programmed. The fabrication may be done in a variety of ways; I chose the milling process. </p>
+          <h2 class="title-section"> PCB Fabrication</h2>
+          <p>The fabrication is done using The  CNC milling machine.Milling is the process of machining using rotary cutters to remove material by advancing a cutter into a workpiece <a href="https://en.wikipedia.org/wiki/Milling_(machining)" > wikipedia.</a></p>
+          <p>First, I downloaded the below ready trace and outline images of <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html" > FabTinyISP </a>. The I used <a href=http://fabmodules.org > Fabmodules</a> to convert those images into a format that can be understandable by the milling machine </p> 
+          <h4 class="title-section"> <span class="fg-primary">trace image </span> </h4>
+          <center> <img src="assets/img/fts_mini_traces.png" width="400" height="150">
+          </center>
+          <br>
+          <h4 class="title-section"> <span class="fg-primary">outtline image </span></h4>
+          <center> <img src="assets/img/fts_mini_cut.png" width="400" height="150">
+          </center>
+           <br>
+          <p>The photos below demonstrate the input parameters in fabmodules. For the topmost settings, I select.rml output because it is recognized by the milling machine in the lab. Following that, I chose PCB outline (1/32) for the outline image and PCB trace (1/64) for the trace image. I chose the machine name SRM-20 for the left settings and set the offsets of x, y, and z to 0. Finally, press the calculate and save buttons. The black lines indicate where the machine will trace to engrave the bored.</p>
+          <br>
+          <center> <img src="assets/img/trace.png" width="500" height="300">
+          </center>
+           <center> <img src="assets/img/outline.png" width="500" height="300">
+          </center>
+          <br>
+          <p>Then , I saved the .rml files into flash , and put it in the SRM-20 milling machine shown below.
+          </p>
+           <center> <img src="assets/img/SRM.png" width="300" height="200">
+          </center>
+          <p> Before I begin milling, I placed the copper board in the machine and tighten it with the screws.</p>
+          <br>
+         
+  <div class="row">
+  <div class="column">
+      
+    <img src="assets/img/copper1.jpg" width="300" height="200">
+      
+  </div>
+    
+  <div class="column">
+      
+    <img src="assets/img/copper2.jpg" width="300" height="200">
+          
+  </div>
+</div>
+   <p>Then,I placed the miling bit for the tracing (1/64) and start setting the origin on the machine panel. For the X and Y plane it can be done automatically through the panel.For the Z plane , we must doing it manually since the bit is very sensitive and can be easily be broken. To do so, we must unscrew the bit and put it down slow so that it touch the board. When it touches the board , fix the bit again and set the origin.Finally, click on cut and choose the right file.The following images shows the machine panel and steps while milling:-</p>
+    <br>
+    <center>
+    <img src="assets/img/m3.JPEG" width="500" height="300">
+    </center>
+         <br>
+        <div class="row">
+  <div class="column">
+      
+    <img src="assets/img/m2.jpg" width="300" height="200">
+      
+  </div>
+    
+  <div class="column">
+      
+    <img src="assets/img/m1.jpg" width="300" height="200">
+          
+  </div>   
+        
+        </div>
+          
+    <br>
+        <p>After the machine finished cutting, I discovered that there are missing parts from the circuits because I did not set the origin correctly. I rest the origin repeted the above steps.The following image is trace for the PCB after removing waste by the brush.</p>
+          <br>
+          <center>
+         <img src="assets/img/pcb2.jpg" width="400" height="200">
+              </center>
+          <br>
+          <p> I did the same thing for outline , the milling bit is changed to 1/32. Only the origin of Z plane is set again and the X and Y plane is not changed.Here is the PCB after taking it out from the board:- </p>
+          <br>
+          <center>
+           <img src="assets/img/PCB.jpg" width="300" height="200">
+          </center>
+          <br>
+          <h2 class="title-section"> PCB Soldering</h2>
+          <p> I started by collecting the components and orgnized them by sticking them into two face tap as shown below.This technique is very good since those are micro components and they can be lost easily.</p>
+              <br>
+              <center>
+            <img src="assets/img/components.jpg" width="400" height="500">  
+              </center>
+          <br>
+          <p>After that , I start soldering. I used the schematics in <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html" > FabTinyISP </a> to know where to place the components. </p>
+            <br>
+             <center>
+            <img src="assets/img/solder.jpeg" width="400" height="500">  
+              </center>
+            <br>
+          <p> There is no specific method for soldering, but I follow those steps that I find them easy :-</p>
+          <p>1-heat the place you want to solder  </p>
+           
+          <p>2- add soldering material to that place</p>
+          <p>3- hold the component using tweezer, heat the soldering material and place the component at the same.Press on one head of the component by the soldering tool until it fixed.</p>
+          <p>4-solder the other head same us the above steps </p>
+
+        
+          <br>
+          <p>Finally, I did a continuity test with the multimeter to confirm that there are no shorts between Vcc and GND.Here is the PCB after soldering the compnents:</p>
+          <br>
+          <center>
+            <img src="assets/img/final%20PCB.jpeg" width="500" height="300">  
+              </center>
+          <br>
+          <h2 class="title-section"> Programming FabTinyISP</h2>
+          <p> To program the TinyISP, I should install some software to setup the environment of it. I followed the steps written in Fatima Alhashimi's website, a previous Fabacademy student.First I downloaded <a href="https://brewinstall.org/" >CrossPack</a> software.Then I set the AVR-GCC by runnig this following commands:-</p>
+          <p><strong> brew tap osx-cross/avr  <br> brew install binutils <br>brew install gcc <br>brew tap osx-cross/avr && brew install avr-gcc <br> Brew install avrdude <br> </strong> </p>
+          
+          <p>I restart the terminal , then I run the following the commands:- <br>
+              1-<strong> avr-gcc --version </strong> -> to ensure that the right version is installed <br> 2- <strong> Make -v </strong> -> to check if the make command is working.</p>
+              <br>
+             <center>
+              <img src="assets/img/AVR.png" width="700" height="200">
+               </center>
+          <br>
+            <p> For the frimware code, I installed zip file as mentioned in  <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html" > FabTinyISP </a>.Then I did the following steps:<br>
+                extract zip file -> open terminal and go directory where the file is save -> run the make command.<br>
+                after running the command a file named fts_frimware.hex will be created.  </p>
+               <br>
+             <center>
+              <img src="assets/img/firmware.png"width="700" height="200">
+               </center>
+          <br>
+          <br>
+             <center>
+              <img src="assets/img/hex.png" width="600" height="300">
+               </center>
+          <br>
+           <h3 class="title-section"> <span class="fg-primary">Activating the Programmer: </span> </h3>
+          <p> after installing all required software, its time for programming it.Before that, I prepared a ribbon cable by using a cluster of six wires and a female connecter. I placed the wire through the openning of the connectors and sucred them using a hammer. Make sure that both connectors facing the same direction and the wire are connected at same pin in both connectors For example : if the brown wire in one connector is connected in the first pin on the left , it should be connected at the same pin in the other connector.Here is of the Ribbon cable connected between the programmed ISP and the one that will be programmed.
+              
+          </p>
+    <div class="row">
+  <div class="column">
+      
+    <img src="assets/img/Ribbon%20cable.PNG" width="400" height="500">
+      
+  </div>
+    
+  <div class="column">
+      
+    <img src="assets/img/Isp.PNG" width="400" height="500">
+          
+  </div>   
+        
+        </div>
+          <p> Now I will statrt programming , I connected the programmed ISP to my laptop by an adapter.Be sure that the ribbon cable is connected correctly and the progammed ISP should be connected to the laptop.</p>
+          
+          <center>
+              <img src="assets/img/programming.JPEG" width="300" height="500">
+          </center>
+          <br>
+          <p>here are steps of programming the ISP through the terminal :</p>
+          
+          <p>
+              1- Go to directory where you saved the .hex file. Then run <strong>make flash</strong> command.
+              <center> <img src="assets/img/flash.png" width="400" height="200">
+              </center></p>
+              <br>
+            <p>  2- run <strong> make fuses </strong> command this will setup the fuses.
+              <center> <img src="assets/img/fuse.png" width="400" height="200">
+                </center>   
+          </p>
+           <p>  3- run <strong> make rstdisbl </strong> command this will disable the reset pin and the we can not reprograme the ISP anymore 
+              <center> <img src="assets/img/reset.png" width="400" height="200">
+                </center> 
+          </p>
+          <br>
+          <p>  Now my ISP is ready to program any other PCB.I Did the following steps to test my programmer:-</p>
+          
+          <p>1-open Arduino go to Arduino ->prefrences -> Additional Boards Manager and copy this link there <strong>https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json</strong>.
+              <center> <img src="assets/img/board.png" width="400" height="300">
+                </center>  
+          </p>
+          <br>
+          <p>2-Go to tools -> board maneger-> type Tiny in search and install it
+              <center> <img src="assets/img/tiny.png" width="400" height="300">
+                </center>  
+          </p>
+          <br>
+          <p>3-Go to tools->Board-> Atiny microcontrollers-> Atiny24/44/84 <br>
+             4-Choose Atiny 44 and and the clock 20 MHz <br>
+             5-connect ISP to laptop and connect the PCB you want to program.<br>
+             6-Go to Sketch->upload as programmer.
+                
+          </p>
+          <br>
+          <p> Here is video that shows my ISP is successfully can program other PCBs</p>
+          <center>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/U4a-YMR6Qhk" >
+         </iframe>
+              </center>
+          <br>
+          <h2 class="title-section"> Faced Problems:</h2>
+          <p> I faced too many problems while programming my ISP.First, when I ran the make flash command , it did not regnoize my ISP that's because I forgot to solder the jiont as it shown below in the picture.
+              
+              <center> <img src="assets/img/joint.jpg" width="400" height="300">
+                </center> 
+          </p>
+          <p>After soldering the joint , I connect my ISP again.When runnig the command, smoke started to get out from ISP. I disconnected and start checking out by the multimeter if there is any short. I found that there is short between one of the resistor and one line as shown below. 
+              <center> <img src="assets/img/resistor.jpg" width="400" height="300">
+                </center> 
+          </p>
+          <p>After removing the solder that created a short , I retried again but it also shows the same program. I figured out that the diode that is connected to the line that is get shorted is burned.When checking out with multimeter, the diode gives voltage even if I reverse dirction. So I remove the diode and replace it with a new one.
+               <center> <img src="assets/img/multimeter.JPG" width="400" height="300">
+                </center> 
+          </p>       
+    <div class="row">
+  <div class="column">
+      
+    <img src="assets/img/diode.jpg" width="400" height="200">
+      
+  </div>
+    
+  <div class="column">
+      
+    <img src="assets/img/diode2.png" width="400" height="200">
+          
+  </div>   
+          
+          </div>
+          
+          <br>
+          <p>After that, my ISP was recognized but it still says that there is connection error.I tried many times by adding more soldering material and checking for short untill finally I solved the problem.I replace my ATtiny with a new one and Finally it worked.
+               <center> <img src="assets/img/error%20connection.png" width="500" height="300">
+                </center> 
+              
+          </p>
+            </div>
+      </div>
+          
+
+    </main>
+  <script src="js/jquery-3.5.1.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script src="vendor/wow/wow.min.js"></script>
+
+<script src="vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+
+<script src="js/google-maps.js"></script>
+
+<script src="js/theme.js"></script>
+    </body>
+</html>

@@ -1842,7 +1842,7 @@ a.fg-light:hover, a.fg-light:focus {
 .portfolio {
   display: block;
   background-color: #F2F4FE;
-  border-radius: 8px;
+  border-radius: 7px;
   overflow: hidden;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1854,8 +1854,11 @@ a.fg-light:hover, a.fg-light:focus {
 }
 
 .portfolio img {
-  width: auto;
-  max-width: 100%;
+  width: 300px;
+  height: 200px;    
+  
+    
+    
 }
 
 .card-testimonial {
@@ -2466,4 +2469,28 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
